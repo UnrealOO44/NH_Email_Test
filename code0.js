@@ -5,15 +5,17 @@ gdjs.Untitled_32sceneCode.GDNewTextInputObjects1= [];
 gdjs.Untitled_32sceneCode.GDNewTextInputObjects2= [];
 gdjs.Untitled_32sceneCode.GDtxt_9595NameObjects1= [];
 gdjs.Untitled_32sceneCode.GDtxt_9595NameObjects2= [];
-gdjs.Untitled_32sceneCode.GDtxtx_9595EmailObjects1= [];
-gdjs.Untitled_32sceneCode.GDtxtx_9595EmailObjects2= [];
+gdjs.Untitled_32sceneCode.GDtxt_9595EmailObjects1= [];
+gdjs.Untitled_32sceneCode.GDtxt_9595EmailObjects2= [];
 gdjs.Untitled_32sceneCode.GDtxt_9595TextObjects1= [];
 gdjs.Untitled_32sceneCode.GDtxt_9595TextObjects2= [];
 gdjs.Untitled_32sceneCode.GDFloatingOutButtonDarkBlueObjects1= [];
 gdjs.Untitled_32sceneCode.GDFloatingOutButtonDarkBlueObjects2= [];
+gdjs.Untitled_32sceneCode.GDNew3DBoxObjects1= [];
+gdjs.Untitled_32sceneCode.GDNew3DBoxObjects2= [];
 
 
-gdjs.Untitled_32sceneCode.userFunc0x9086c0 = function GDJSInlineCode(runtimeScene) {
+gdjs.Untitled_32sceneCode.userFunc0x897e68 = function GDJSInlineCode(runtimeScene) {
 "use strict";
 // Prevent loading the script multiple times
 if (!document.getElementById("emailjs-sdk")) {
@@ -39,12 +41,12 @@ gdjs.Untitled_32sceneCode.eventsList0 = function(runtimeScene) {
 {
 
 
-gdjs.Untitled_32sceneCode.userFunc0x9086c0(runtimeScene);
+gdjs.Untitled_32sceneCode.userFunc0x897e68(runtimeScene);
 
 }
 
 
-};gdjs.Untitled_32sceneCode.userFunc0x8062d8 = function GDJSInlineCode(runtimeScene) {
+};gdjs.Untitled_32sceneCode.userFunc0x93c7c0 = function GDJSInlineCode(runtimeScene) {
 "use strict";
 // Ensure EmailJS is loaded before trying to send
 if (typeof emailjs !== 'undefined') {
@@ -67,6 +69,7 @@ if (typeof emailjs !== 'undefined') {
     // REPLACE 'YOUR_SERVICE_ID' and 'YOUR_TEMPLATE_ID' with actual IDs
     emailjs.send('service_9ksn8er', 'template_37g5zug', templateParams)
         .then(function(response) {
+            alert('SUCCESS!');
             console.log('SUCCESS!', response.status, response.text);
         }, function(error) {
             console.log('FAILED...', error);
@@ -81,7 +84,7 @@ gdjs.Untitled_32sceneCode.eventsList1 = function(runtimeScene) {
 {
 
 
-gdjs.Untitled_32sceneCode.userFunc0x8062d8(runtimeScene);
+gdjs.Untitled_32sceneCode.userFunc0x93c7c0(runtimeScene);
 
 }
 
@@ -118,14 +121,31 @@ for (var i = 0, k = 0, l = gdjs.Untitled_32sceneCode.GDFloatingOutButtonDarkBlue
 }
 gdjs.Untitled_32sceneCode.GDFloatingOutButtonDarkBlueObjects1.length = k;
 if (isConditionTrue_0) {
+/* Reuse gdjs.Untitled_32sceneCode.GDFloatingOutButtonDarkBlueObjects1 */
+gdjs.copyArray(runtimeScene.getObjects("txt_Email"), gdjs.Untitled_32sceneCode.GDtxt_9595EmailObjects1);
 gdjs.copyArray(runtimeScene.getObjects("txt_Name"), gdjs.Untitled_32sceneCode.GDtxt_9595NameObjects1);
 gdjs.copyArray(runtimeScene.getObjects("txt_Text"), gdjs.Untitled_32sceneCode.GDtxt_9595TextObjects1);
-gdjs.copyArray(runtimeScene.getObjects("txtx_Email"), gdjs.Untitled_32sceneCode.GDtxtx_9595EmailObjects1);
 {runtimeScene.getGame().getVariables().getFromIndex(0).setString((( gdjs.Untitled_32sceneCode.GDtxt_9595NameObjects1.length === 0 ) ? "" :gdjs.Untitled_32sceneCode.GDtxt_9595NameObjects1[0].getBehavior("Text").getText()));
 }
 {runtimeScene.getGame().getVariables().getFromIndex(1).setString((( gdjs.Untitled_32sceneCode.GDtxt_9595TextObjects1.length === 0 ) ? "" :gdjs.Untitled_32sceneCode.GDtxt_9595TextObjects1[0].getBehavior("Text").getText()));
 }
-{runtimeScene.getGame().getVariables().getFromIndex(2).setString((( gdjs.Untitled_32sceneCode.GDtxtx_9595EmailObjects1.length === 0 ) ? "" :gdjs.Untitled_32sceneCode.GDtxtx_9595EmailObjects1[0].getBehavior("Text").getText()));
+{runtimeScene.getGame().getVariables().getFromIndex(2).setString((( gdjs.Untitled_32sceneCode.GDtxt_9595EmailObjects1.length === 0 ) ? "" :gdjs.Untitled_32sceneCode.GDtxt_9595EmailObjects1[0].getBehavior("Text").getText()));
+}
+{for(var i = 0, len = gdjs.Untitled_32sceneCode.GDtxt_9595NameObjects1.length ;i < len;++i) {
+    gdjs.Untitled_32sceneCode.GDtxt_9595NameObjects1[i].getBehavior("Text").setText("");
+}
+}
+{for(var i = 0, len = gdjs.Untitled_32sceneCode.GDtxt_9595EmailObjects1.length ;i < len;++i) {
+    gdjs.Untitled_32sceneCode.GDtxt_9595EmailObjects1[i].getBehavior("Text").setText("");
+}
+}
+{for(var i = 0, len = gdjs.Untitled_32sceneCode.GDtxt_9595TextObjects1.length ;i < len;++i) {
+    gdjs.Untitled_32sceneCode.GDtxt_9595TextObjects1[i].getBehavior("Text").setText("");
+}
+}
+{for(var i = 0, len = gdjs.Untitled_32sceneCode.GDFloatingOutButtonDarkBlueObjects1.length ;i < len;++i) {
+    gdjs.Untitled_32sceneCode.GDFloatingOutButtonDarkBlueObjects1[i].SetLabelTextOp("Sent!", null);
+}
 }
 
 { //Subevents
@@ -144,24 +164,28 @@ gdjs.Untitled_32sceneCode.GDNewTextInputObjects1.length = 0;
 gdjs.Untitled_32sceneCode.GDNewTextInputObjects2.length = 0;
 gdjs.Untitled_32sceneCode.GDtxt_9595NameObjects1.length = 0;
 gdjs.Untitled_32sceneCode.GDtxt_9595NameObjects2.length = 0;
-gdjs.Untitled_32sceneCode.GDtxtx_9595EmailObjects1.length = 0;
-gdjs.Untitled_32sceneCode.GDtxtx_9595EmailObjects2.length = 0;
+gdjs.Untitled_32sceneCode.GDtxt_9595EmailObjects1.length = 0;
+gdjs.Untitled_32sceneCode.GDtxt_9595EmailObjects2.length = 0;
 gdjs.Untitled_32sceneCode.GDtxt_9595TextObjects1.length = 0;
 gdjs.Untitled_32sceneCode.GDtxt_9595TextObjects2.length = 0;
 gdjs.Untitled_32sceneCode.GDFloatingOutButtonDarkBlueObjects1.length = 0;
 gdjs.Untitled_32sceneCode.GDFloatingOutButtonDarkBlueObjects2.length = 0;
+gdjs.Untitled_32sceneCode.GDNew3DBoxObjects1.length = 0;
+gdjs.Untitled_32sceneCode.GDNew3DBoxObjects2.length = 0;
 
 gdjs.Untitled_32sceneCode.eventsList2(runtimeScene);
 gdjs.Untitled_32sceneCode.GDNewTextInputObjects1.length = 0;
 gdjs.Untitled_32sceneCode.GDNewTextInputObjects2.length = 0;
 gdjs.Untitled_32sceneCode.GDtxt_9595NameObjects1.length = 0;
 gdjs.Untitled_32sceneCode.GDtxt_9595NameObjects2.length = 0;
-gdjs.Untitled_32sceneCode.GDtxtx_9595EmailObjects1.length = 0;
-gdjs.Untitled_32sceneCode.GDtxtx_9595EmailObjects2.length = 0;
+gdjs.Untitled_32sceneCode.GDtxt_9595EmailObjects1.length = 0;
+gdjs.Untitled_32sceneCode.GDtxt_9595EmailObjects2.length = 0;
 gdjs.Untitled_32sceneCode.GDtxt_9595TextObjects1.length = 0;
 gdjs.Untitled_32sceneCode.GDtxt_9595TextObjects2.length = 0;
 gdjs.Untitled_32sceneCode.GDFloatingOutButtonDarkBlueObjects1.length = 0;
 gdjs.Untitled_32sceneCode.GDFloatingOutButtonDarkBlueObjects2.length = 0;
+gdjs.Untitled_32sceneCode.GDNew3DBoxObjects1.length = 0;
+gdjs.Untitled_32sceneCode.GDNew3DBoxObjects2.length = 0;
 
 
 return;
