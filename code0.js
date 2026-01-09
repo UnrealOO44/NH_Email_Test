@@ -13,7 +13,7 @@ gdjs.Untitled_32sceneCode.GDFloatingOutButtonDarkBlueObjects1= [];
 gdjs.Untitled_32sceneCode.GDFloatingOutButtonDarkBlueObjects2= [];
 
 
-gdjs.Untitled_32sceneCode.userFunc0x8e5b50 = function GDJSInlineCode(runtimeScene) {
+gdjs.Untitled_32sceneCode.userFunc0x9086c0 = function GDJSInlineCode(runtimeScene) {
 "use strict";
 // Prevent loading the script multiple times
 if (!document.getElementById("emailjs-sdk")) {
@@ -39,12 +39,12 @@ gdjs.Untitled_32sceneCode.eventsList0 = function(runtimeScene) {
 {
 
 
-gdjs.Untitled_32sceneCode.userFunc0x8e5b50(runtimeScene);
+gdjs.Untitled_32sceneCode.userFunc0x9086c0(runtimeScene);
 
 }
 
 
-};gdjs.Untitled_32sceneCode.userFunc0x8e59e0 = function GDJSInlineCode(runtimeScene) {
+};gdjs.Untitled_32sceneCode.userFunc0x8062d8 = function GDJSInlineCode(runtimeScene) {
 "use strict";
 // Ensure EmailJS is loaded before trying to send
 if (typeof emailjs !== 'undefined') {
@@ -81,7 +81,7 @@ gdjs.Untitled_32sceneCode.eventsList1 = function(runtimeScene) {
 {
 
 
-gdjs.Untitled_32sceneCode.userFunc0x8e59e0(runtimeScene);
+gdjs.Untitled_32sceneCode.userFunc0x8062d8(runtimeScene);
 
 }
 
