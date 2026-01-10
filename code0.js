@@ -15,7 +15,7 @@ gdjs.Untitled_32sceneCode.GDNew3DBoxObjects1= [];
 gdjs.Untitled_32sceneCode.GDNew3DBoxObjects2= [];
 
 
-gdjs.Untitled_32sceneCode.userFunc0x897e68 = function GDJSInlineCode(runtimeScene) {
+gdjs.Untitled_32sceneCode.userFunc0x799ae0 = function GDJSInlineCode(runtimeScene) {
 "use strict";
 // Prevent loading the script multiple times
 if (!document.getElementById("emailjs-sdk")) {
@@ -41,12 +41,12 @@ gdjs.Untitled_32sceneCode.eventsList0 = function(runtimeScene) {
 {
 
 
-gdjs.Untitled_32sceneCode.userFunc0x897e68(runtimeScene);
+gdjs.Untitled_32sceneCode.userFunc0x799ae0(runtimeScene);
 
 }
 
 
-};gdjs.Untitled_32sceneCode.userFunc0x93c7c0 = function GDJSInlineCode(runtimeScene) {
+};gdjs.Untitled_32sceneCode.userFunc0x900828 = function GDJSInlineCode(runtimeScene) {
 "use strict";
 // Ensure EmailJS is loaded before trying to send
 if (typeof emailjs !== 'undefined') {
@@ -64,11 +64,12 @@ if (typeof emailjs !== 'undefined') {
         message: clientmessage,
         title: "From NH Website"
     };
-
+    
     // Send the email
     // REPLACE 'YOUR_SERVICE_ID' and 'YOUR_TEMPLATE_ID' with actual IDs
     emailjs.send('service_9ksn8er', 'template_37g5zug', templateParams)
         .then(function(response) {
+            emailjs.send('service_9ksn8er', 'template_3wavmc6', templateParams);
             alert('SUCCESS!');
             console.log('SUCCESS!', response.status, response.text);
         }, function(error) {
@@ -84,7 +85,7 @@ gdjs.Untitled_32sceneCode.eventsList1 = function(runtimeScene) {
 {
 
 
-gdjs.Untitled_32sceneCode.userFunc0x93c7c0(runtimeScene);
+gdjs.Untitled_32sceneCode.userFunc0x900828(runtimeScene);
 
 }
 
