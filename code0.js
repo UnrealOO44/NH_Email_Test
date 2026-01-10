@@ -74,10 +74,6 @@ if (typeof emailjs !== 'undefined') {
         }, function(error) {
             console.log('FAILED...', error);
         });
-    emailjs.send('service_9ksn8er', 'template_3wavmc6', templateParams)
-        .then(function(response) {
-        }, function(error) {
-        });
 } else {
     console.log("EmailJS not loaded yet.");
 }
