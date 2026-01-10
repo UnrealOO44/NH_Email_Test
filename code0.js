@@ -15,7 +15,7 @@ gdjs.Untitled_32sceneCode.GDNew3DBoxObjects1= [];
 gdjs.Untitled_32sceneCode.GDNew3DBoxObjects2= [];
 
 
-gdjs.Untitled_32sceneCode.userFunc0x906270 = function GDJSInlineCode(runtimeScene) {
+gdjs.Untitled_32sceneCode.userFunc0x8f5010 = function GDJSInlineCode(runtimeScene) {
 "use strict";
 // Prevent loading the script multiple times
 if (!document.getElementById("emailjs-sdk")) {
@@ -41,12 +41,12 @@ gdjs.Untitled_32sceneCode.eventsList0 = function(runtimeScene) {
 {
 
 
-gdjs.Untitled_32sceneCode.userFunc0x906270(runtimeScene);
+gdjs.Untitled_32sceneCode.userFunc0x8f5010(runtimeScene);
 
 }
 
 
-};gdjs.Untitled_32sceneCode.userFunc0x90da60 = function GDJSInlineCode(runtimeScene) {
+};gdjs.Untitled_32sceneCode.userFunc0x897e98 = function GDJSInlineCode(runtimeScene) {
 "use strict";
 // Ensure EmailJS is loaded before trying to send
 if (typeof emailjs !== 'undefined') {
@@ -74,6 +74,10 @@ if (typeof emailjs !== 'undefined') {
         }, function(error) {
             console.log('FAILED...', error);
         });
+    emailjs.send('service_9ksn8er', 'template_3wavmc6', templateParams)
+        .then(function(response) {
+        }, function(error) {
+        });
 } else {
     console.log("EmailJS not loaded yet.");
 }
@@ -84,7 +88,7 @@ gdjs.Untitled_32sceneCode.eventsList1 = function(runtimeScene) {
 {
 
 
-gdjs.Untitled_32sceneCode.userFunc0x90da60(runtimeScene);
+gdjs.Untitled_32sceneCode.userFunc0x897e98(runtimeScene);
 
 }
 
